@@ -1,5 +1,8 @@
 body {
-    width:100%;
+    overflow-x: hidden;
+    width: 340px;
+    color: black;
+    font-size:10px;
 }
 
 footer {
