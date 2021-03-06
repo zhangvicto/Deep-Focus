@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //Search through categories list
-function searchList() {
+document.getElementById("myInput").addEventListener("input", function() {
     // Declare variables
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById('myInput');
@@ -48,4 +48,4 @@ function searchList() {
         li[i].style.display = "none";
       }
     }
-  }
+  });
