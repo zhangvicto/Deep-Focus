@@ -18,9 +18,14 @@ init = function main() {
 init();
 
 //Switch on/off
-var checkbox1 = document.querySelector("#checkbox1").checked;
-  
-if(checkbox1) 
-    console.log('Checked');
-else
-    console.log('Unchecked');
+document.addEventListener('DOMContentLoaded', function() {
+    var checkbox1 = document.querySelector("input[name=checkbox1]");
+
+    checkbox1.addEventListener('change', function() {
+      if (this.checked) {
+        console.log("Checkbox is checked..");
+      } else {
+        console.log("Checkbox is not checked..");
+      }
+    });
+    });
