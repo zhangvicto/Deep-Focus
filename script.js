@@ -2,7 +2,7 @@
 findAllURL = function changeAllURL(text){
     var current = window.location.href;
     if(current.startsWith(text)){
-      if(confirm("This page may contain off-topic points. Would you like to continue Y/N?")) {
+      if(confirm("This page may contain off-topic points. Would you like to continue?")) {
       }
       else {
         window.location.href = "http://www.google.com"
@@ -15,7 +15,6 @@ init = function main() {
   findAllURL("https://www.youtube.com/");
 }
 
-init();
 
 //Switch on/off
 document.addEventListener('DOMContentLoaded', function() {
@@ -23,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     checkbox1.addEventListener('change', function() {
       if (this.checked) {
-        console.log("Checkbox is checked..");
+        init();
       } else {
-        console.log("Checkbox is not checked..");
+        
       }
     });
 });
