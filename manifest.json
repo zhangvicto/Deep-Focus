@@ -7,6 +7,10 @@
         "scripts": ["background.js","script.js"],
         "persistent": false
     },
+    "content_scripts": [{
+        "js": ["jquery-3.6.0.min.js","script.js"],
+        "matches": ["http://*/*", "https://*/*"]
+      }],
     "page_action": {
         "default_popup": "popup.html",
         "default_icon": {
