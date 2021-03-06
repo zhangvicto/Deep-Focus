@@ -1,8 +1,10 @@
 body {
     overflow-x: hidden;
     width: 340px;
+    margin: 20px;
     color: black;
-    font-size:10px;
+    font-size:14px;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 footer {
