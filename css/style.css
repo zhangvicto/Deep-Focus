@@ -76,6 +76,8 @@ body {
   .slider.round:before {
     border-radius: 50%;
   }
-footer {
 
+
+footer {
+    text-align: center;
 }
