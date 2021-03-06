@@ -1,7 +1,7 @@
 {
     "name": "Deep Focus",
     "version": "1.0",
-    "description": "Build an Extension!",
+    "description": "Focus Assist - No more distractions and get back to work!",
     "permissions": ["storage"],
     "background": {
         "scripts": ["background.js","script.js"],
