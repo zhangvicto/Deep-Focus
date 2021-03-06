@@ -8,5 +8,10 @@ findAllURL = function changeAllURL(text){
     }
   }
 
+init = function main() {
   findAllURL("https://www.facebook.com/");
   findAllURL("https://www.youtube.com/");
+}
+
+init();
+  
