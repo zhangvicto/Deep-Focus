@@ -8,7 +8,7 @@
         "persistent": false
     },
     "content_scripts": [{
-        "js": ["jquery-3.6.0.min.js","script.js"],
+        "js": ["script.js"],
         "matches": ["http://*/*", "https://*/*"]
       }],
     "page_action": {
