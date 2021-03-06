@@ -2,6 +2,7 @@ body {
     overflow-x: hidden;
     width: 340px;
     margin: 20px;
+    margin-bottom: 5px;
     color: black;
     font-size:14px;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
@@ -13,6 +14,14 @@ body {
 
 .logo-img {
     display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-text{
+    padding-left:10px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    display: inline;
     vertical-align: middle;
 }
 
