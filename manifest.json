@@ -4,11 +4,11 @@
     "description": "Focus Assist - No more distractions and get back to work!",
     "permissions": ["storage"],
     "background": {
-        "scripts": ["background.js","script.js"],
+        "scripts": ["background.js"],
         "persistent": false
     },
     "content_scripts": [{
-        "js": ["script.js"],
+        "js": ["content.js","script.js"],
         "matches": ["http://*/*", "https://*/*"]
       }],
     "browser_action": {
