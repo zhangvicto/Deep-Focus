@@ -21,6 +21,8 @@ chrome.storage.sync.get(['value'], function (result) {
   console.log(buttonState);
     if(buttonState){
       init();
+      var checkbox1 = document.querySelector("input[name=checkbox1]");
+      checkbox1.checked = true;
     }
   
 });
