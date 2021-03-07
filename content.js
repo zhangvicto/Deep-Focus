@@ -119,7 +119,7 @@ function getStorage() {
 
 }
 
-chrome.browserAction.onClicked.addListener(function(tab) {
+chrome.tabs.onUpdated.addListener(function(tab, tabId, changeInfo) {
   console.log('Injecting content script(s)');
   //On Firefox document.body.textContent is probably more appropriate
   chrome.tabs.executeScript(tab.id,{
