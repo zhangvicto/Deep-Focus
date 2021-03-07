@@ -1,5 +1,5 @@
 # Deep-Focus
-Stopping you from being distracted and tells you to get back to work
+Empowering people with focus. 
 ![alt text](https://github.com/zhangvicto/Deep-Focus/blob/master/images/deep_focus.png?raw=true)
 
 # Inspiration
