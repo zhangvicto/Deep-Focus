@@ -1,15 +1,14 @@
 body {
     overflow-x: hidden;
     width: 340px;
-    margin: 20px;
-    margin-bottom: 5px;
     color: black;
     font-size:14px;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 .title {
-    padding-bottom: 10px;
+    margin: 10px;
+    margin-bottom: 5px;
 }
 
 .logo-img {
@@ -18,22 +17,60 @@ body {
 }
 
 .logo-text{
-    padding-left:10px; 
+    padding-left:7px; 
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     display: inline;
     vertical-align: middle;
 }
 
+.mail-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left:30px;
+}
+
+.content-container {
+    background-color: honeydew;
+    margin: 15px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 20px;;
+}
+
+
+.text-input {
+
+}
 
 .webpage-block {
-    
+    text-align: center;
+}
+
+.block-site {
+    width:90px;
 }
 
 .content-filter {
     padding-top:10px;
+    text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+li a {
+    text-decoration: none;
+    color:black;
+}
+
+li a:hover {
+    background-color: gray;
+    color: white;
+}
 
 /* The switch - the box around the slider */
 .switch {
@@ -44,10 +81,25 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top:5px;
+  }
+
+  .switch2 {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top:5px;
   }
   
   /* Hide default HTML checkbox */
 .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch2 input {
     opacity: 0;
     width: 0;
     height: 0;

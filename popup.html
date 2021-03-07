@@ -8,13 +8,19 @@
 </head>
 
 <body>
+
+  
   <!-- top bar -->
   <div class="title">
-    <img class="logo-img" src="images/deep_focus.png" height=50px;>
+    <img class="logo-img" src="images/deep_focus.png" height=40px;>
     <div class="logo-text">DEEP FOCUS</div>
+    <div class="mail-button"><a href="https://devpost.com/software/deep-focus-ih6l34?ref_content=user-portfolio&ref_feature=in_progress"><img src="./images/mail.png" height=15px></a> </div>
   </div>
-
-  <hr>
+  
+  <hr style="border:none;border-top-style: solid;border-top-color:grey;">
+  
+  <div class="content-container">
+  
   <!-- webpage blocking toggle -->
   <div class="webpage-block">
 
@@ -25,13 +31,62 @@
       <span class="slider round"></span>
     </label>
 
+    Indicate Pages you would like to block: 
+    
+    <div class="block-site">
+      Youtube
+      <label class="switch2">
+        <input type="checkbox" name=checkboxyt />
+        <span class="slider round"></span>
+      </label>
+    </div>
+   
+    <div class="block-site">
+      Facebook
+      <label class="switch2">
+        <input type="checkbox" name=checkboxfb />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="block-site">
+      Tumblr
+      <label class="switch2">
+        <input type="checkbox" name=checkboxtb />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="block-site">
+      Twitter
+      <label class="switch2">
+        <input type="checkbox" name=checkboxtt />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="block-site">
+      Reddit
+      <label class="switch2">
+        <input type="checkbox" name=checkboxrt />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="block-site">
+      Inappropriate Sites
+      <label class="switch2">
+        <input type="checkbox" name=checkboxno />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
   </div>
 
   <!-- specific content filtering -->
   <div class="content-filter">
-    Select a category of work you are working on. 
-
-    <input type="text" id="myInput" placeholder="Search for categories..." />
+    Select the category of work you are working on. If you visit any webpage with unrelated content you will be alerted!
+    <input class="text-input" type="text" id="myInput" placeholder="Search for categories..." />
     <ul id="myUL">
       <li><a href="#">Coffee</a></li>
       <li><a href="#">Coffee</a></li>
@@ -46,7 +101,7 @@
     </ul>
   </div>
 
-
+</div>
 </body>
 
 <script src="script.js"></script>
