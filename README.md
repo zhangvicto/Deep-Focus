@@ -1,5 +1,6 @@
 # Deep-Focus
 Stopping you from being distracted and tells you to get back to work
+![alt text](https://github.com/1zhangvicto/Deep-Focus/blob/images/logo.png?raw=true)
 
 # Inspiration
 As engineering students, content is abundant and time is limited. Often we get up from a study session, but just don't understand where the time went by. After reading Deep Work by Cal Newport and researching and reading ways to improve productivity, we discovered something. Our focus is like a flame, very delicate yet very powerful when concentrated. The smallest distraction can lead us on a whole new tangent of irrelevant videos, throwing water on our delicate flame of focus while also just wasting time.
