@@ -2,7 +2,8 @@
     "name": "Deep Focus",
     "version": "1.0",
     "description": "Focus Assist - No more distractions and get back to work!",
-    "permissions": ["storage","activeTab"],
+    "permissions": ["storage","activeTab" ,
+      "http://*/*", "https://*/*"],
     "background": {
         "scripts": ["background.js"],
         "persistent": false
