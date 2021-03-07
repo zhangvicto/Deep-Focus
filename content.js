@@ -62,12 +62,12 @@ function getStorage() {
     console.log("Results Retrieved");
     console.log(buttonStateTB);
       if(buttonStateTB){
-        var checkboxtb = document.querySelector("input[name=checkboxtb]");
-        checkboxtb.checked = true;
+        
         if (buttonState) {
           findAllURL("https://www.tumblr.com/");
         }
-        
+        var checkboxtb = document.querySelector("input[name=checkboxtb]");
+        checkboxtb.checked = true;
       }
     
   });
