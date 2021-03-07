@@ -12,10 +12,6 @@ findAllURL = function changeAllURL(text){
     }
   }
 
-//init = function main() {
-//  findAllURL("https://www.facebook.com/");
-//  findAllURL("https://www.youtube.com/");
-//}
 
 //storage get
 function getStorage() {
@@ -33,25 +29,25 @@ function getStorage() {
   });
   
   chrome.storage.sync.get(['value8'], function (result) {
-    buttonState = result['value8'];
+    buttonStateYT = result['value8'];
     console.log("Results Retrieved");
     console.log(buttonStateYT);
       if(buttonStateYT){
-        var checkboxyt = document.querySelector("input[name=checkboxyt]");
-        checkboxyt.checked = true;
-
         if (buttonState) {
           findAllURL("https://www.youtube.com/");
         }
+        var checkboxyt = document.querySelector("input[name=checkboxyt]");
+        checkboxyt.checked = true;
       }
     
   });
   
   chrome.storage.sync.get(['value9'], function (result) {
-    buttonState = result['value9'];
+    buttonStateFB = result['value9'];
     console.log("Results Retrieved");
     console.log(buttonStateFB);
       if(buttonStateFB){
+        
         if (buttonState) {
           findAllURL("https://www.facebook.com/");
         }
@@ -66,11 +62,12 @@ function getStorage() {
     console.log("Results Retrieved");
     console.log(buttonStateTB);
       if(buttonStateTB){
+        var checkboxtb = document.querySelector("input[name=checkboxtb]");
+        checkboxtb.checked = true;
         if (buttonState) {
           findAllURL("https://www.tumblr.com/");
         }
-        var checkboxtb = document.querySelector("input[name=checkboxtb]");
-        checkboxtb.checked = true;
+        
       }
     
   });
