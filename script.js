@@ -22,10 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     checkbox1.addEventListener('change', function() {
       if (this.checked) {
-        init();
       } else {
-        
       }
+      
     });
 });
 
