@@ -32,7 +32,7 @@ function getStorage() {
     
   });
   
-  chrome.storage.sync.get(['value2'], function (result) {
+  chrome.storage.sync.get(['value8'], function (result) {
     buttonState = result['value8'];
     console.log("Results Retrieved");
     console.log(buttonStateYT);
@@ -47,7 +47,7 @@ function getStorage() {
     
   });
   
-  chrome.storage.sync.get(['value3'], function (result) {
+  chrome.storage.sync.get(['value9'], function (result) {
     buttonState = result['value9'];
     console.log("Results Retrieved");
     console.log(buttonStateFB);

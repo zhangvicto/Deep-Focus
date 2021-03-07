@@ -111,36 +111,49 @@ function saveChanges() {
     buttonState = document.querySelector("input[name=checkbox1]").checked;
     chrome.storage.sync.set({ 'value1': buttonState }, function () {
         console.log("Results saved");
+        console.log(buttonState);
     });
 
     buttonStateYT = document.querySelector("input[name=checkboxyt]").checked;
     chrome.storage.sync.set({ 'value8': buttonStateYT }, function () {
         console.log("Results saved");
+        console.log(buttonStateYT);
+
     });
 
     buttonStateFB = document.querySelector("input[name=checkboxfb]").checked;
     chrome.storage.sync.set({ 'value9': buttonStateFB }, function () {
         console.log("Results saved");
+        console.log(buttonStateFB);
+
     });
 
     buttonStateTB = document.querySelector("input[name=checkboxtb]").checked;
     chrome.storage.sync.set({ 'value4': buttonStateTB }, function () {
         console.log("Results saved");
+        console.log(buttonStateTB);
+
     });
 
     buttonStateTT = document.querySelector("input[name=checkboxtt]").checked;
     chrome.storage.sync.set({ 'value5': buttonStateTT }, function () {
         console.log("Results saved");
+        console.log(buttonStateTT);
+
     });
 
     buttonStateRT = document.querySelector("input[name=checkboxrt]").checked;
     chrome.storage.sync.set({ 'value6': buttonStateRT }, function () {
         console.log("Results saved");
+        console.log(buttonStateRT);
+
     });
 
     buttonStateNO = document.querySelector("input[name=checkboxno]").checked;
     chrome.storage.sync.set({ 'value7': buttonStateNO }, function () {
         console.log("Results saved");
+        console.log(buttonStateNO);
+
     });
 
 }
