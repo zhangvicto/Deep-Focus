@@ -31,19 +31,21 @@ body {
 }
 
 .content-container {
-    background-color: honeydew;
+    background-color: #FFF4F2;
     margin: 15px;
     margin-bottom: 5px;
-    padding: 5px;
+    padding: 15px;
+    padding-top:5px;
     border-radius: 20px;;
 }
 
 .text-input {
-
+  width:100%;
 }
 
 .webpage-block {
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .block-site {
@@ -52,14 +54,20 @@ body {
 }
 
 .content-filter {
-    padding-top:10px;
+    padding-top:40px;
     text-decoration: none;
 }
 
 ul {
     list-style-type: none;
+    width:100%;
+    text-align: center;
     padding:0;
     margin:0;
+}
+
+li {
+  width:100%;
 }
 
 li a {

@@ -1,4 +1,4 @@
-let buttonState;
+let buttonState, buttonStateYT, buttonStateFB, buttonStateTB, buttonStateTT, buttonStateRT, buttonStateNO;
 
 //switch on/off
 document.addEventListener('DOMContentLoaded', function () {
@@ -8,11 +8,81 @@ document.addEventListener('DOMContentLoaded', function () {
     
     checkbox1.addEventListener('click', function () {
         if (checkbox1.checked) {
+            getStorage();
             saveChanges();
         } else {
             saveChanges();
         }
     });
+
+
+    var checkboxYT = document.querySelector("input[name=checkboxyt]");
+    
+    checkboxYT.addEventListener('click', function () {
+        if (checkboxYT.checked) {
+            saveChanges();
+        } else {
+            saveChanges();
+        }
+    });
+
+
+    var checkboxFB = document.querySelector("input[name=checkboxfb]");
+    
+    checkboxFB.addEventListener('click', function () {
+        if (checkboxFB.checked) {
+            saveChanges();
+        } else {
+            saveChanges();
+        }
+    });
+
+
+    var checkboxTB = document.querySelector("input[name=checkboxtb]");
+    
+    checkboxTB.addEventListener('click', function () {
+        if (checkboxTB.checked) {
+            saveChanges();
+        } else {
+            saveChanges();
+        }
+    });
+
+
+    var checkboxTT = document.querySelector("input[name=checkboxtt]");
+    
+    checkboxTT.addEventListener('click', function () {
+        if (checkboxTT.checked) {
+            saveChanges();
+        } else {
+            saveChanges();
+        }
+    });
+
+
+    var checkboxRT = document.querySelector("input[name=checkboxrt]");
+    
+    checkboxRT.addEventListener('click', function () {
+        if (checkboxRT.checked) {
+            saveChanges();
+        } else {
+            saveChanges();
+        }
+    });
+
+
+    var checkboxNO = document.querySelector("input[name=checkboxno]");
+    
+    checkboxNO.addEventListener('click', function () {
+        if (checkboxNO.checked) {
+            saveChanges();
+        } else {
+            saveChanges();
+        }
+    });
+
+
+
     
     //Search through categories list
     document.getElementById("myInput").addEventListener("input", function () {
@@ -39,9 +109,38 @@ document.addEventListener('DOMContentLoaded', function () {
 //save settings
 function saveChanges() {
     buttonState = document.querySelector("input[name=checkbox1]").checked;
-    chrome.storage.sync.set({ 'value': buttonState }, function () {
+    chrome.storage.sync.set({ 'value1': buttonState }, function () {
         console.log("Results saved");
     });
+
+    buttonStateYT = document.querySelector("input[name=checkboxyt]").checked;
+    chrome.storage.sync.set({ 'value8': buttonStateYT }, function () {
+        console.log("Results saved");
+    });
+
+    buttonStateFB = document.querySelector("input[name=checkboxfb]").checked;
+    chrome.storage.sync.set({ 'value9': buttonStateFB }, function () {
+        console.log("Results saved");
+    });
+
+    buttonStateTB = document.querySelector("input[name=checkboxtb]").checked;
+    chrome.storage.sync.set({ 'value4': buttonStateTB }, function () {
+        console.log("Results saved");
+    });
+
+    buttonStateTT = document.querySelector("input[name=checkboxtt]").checked;
+    chrome.storage.sync.set({ 'value5': buttonStateTT }, function () {
+        console.log("Results saved");
+    });
+
+    buttonStateRT = document.querySelector("input[name=checkboxrt]").checked;
+    chrome.storage.sync.set({ 'value6': buttonStateRT }, function () {
+        console.log("Results saved");
+    });
+
+    buttonStateNO = document.querySelector("input[name=checkboxno]").checked;
+    chrome.storage.sync.set({ 'value7': buttonStateNO }, function () {
+        console.log("Results saved");
+    });
+
 }
-
-
