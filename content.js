@@ -3,7 +3,7 @@ getStorage();
 //BLOCK THE ENTIRE DOMAIN WITH THE FOLLOWING FUNCTION
 findAllURL = function changeAllURL(text){
     var current = window.location.href;
-    if(current.startsWith(text) && buttonState){
+    if(current.startsWith(text)){
       if(confirm("This page may contain off-topic points. Would you like to continue?")) {
       }
       else {
@@ -25,6 +25,7 @@ function getStorage() {
     console.log(buttonState);
       if(buttonState){
         //init();
+        findAllURL("https://www.youtube.com/");
         var checkbox1 = document.querySelector("input[name=checkbox1]");
         checkbox1.checked = true;
       }
@@ -36,9 +37,12 @@ function getStorage() {
     console.log("Results Retrieved");
     console.log(buttonStateYT);
       if(buttonStateYT){
-        findAllURL("https://www.youtube.com/");
         var checkboxyt = document.querySelector("input[name=checkboxyt]");
         checkboxyt.checked = true;
+
+        if (buttonState) {
+          findAllURL("https://www.youtube.com/");
+        }
       }
     
   });
@@ -48,7 +52,9 @@ function getStorage() {
     console.log("Results Retrieved");
     console.log(buttonStateFB);
       if(buttonStateFB){
-        findAllURL("https://www.facebook.com/");
+        if (buttonState) {
+          findAllURL("https://www.facebook.com/");
+        }
         var checkboxfb = document.querySelector("input[name=checkboxfb]");
         checkboxfb.checked = true;
       }
@@ -60,7 +66,9 @@ function getStorage() {
     console.log("Results Retrieved");
     console.log(buttonStateTB);
       if(buttonStateTB){
-        findAllURL("https://www.tumblr.com/");
+        if (buttonState) {
+          findAllURL("https://www.tumblr.com/");
+        }
         var checkboxtb = document.querySelector("input[name=checkboxtb]");
         checkboxtb.checked = true;
       }
@@ -72,7 +80,9 @@ function getStorage() {
     console.log("Results Retrieved");
     console.log(buttonStateTT);
       if(buttonStateTT){
-        findAllURL("https://twitter.com/");
+        if (buttonState) {
+          findAllURL("https://twitter.com/");
+        }
         var checkboxtt = document.querySelector("input[name=checkboxtt]");
         checkboxtt.checked = true;
       }
@@ -84,7 +94,9 @@ function getStorage() {
     console.log("Results Retrieved");
     console.log(buttonStateRT);
       if(buttonStateRT){
-        findAllURL("https://www.reddit.com/");
+        if (buttonState) {
+          findAllURL("https://www.reddit.com/");
+        }
         var checkboxrt = document.querySelector("input[name=checkboxrt]");
         checkboxrt.checked = true;
       }
@@ -96,7 +108,9 @@ function getStorage() {
     console.log("Results Retrieved");
     console.log(buttonStateNO);
       if(buttonStateNO){
-        go();
+        if (buttonState) {
+          go();
+        }
         var checkboxno = document.querySelector("input[name=checkboxno]");
         checkboxno.checked = true;
       }
