@@ -21,7 +21,6 @@ function getStorage() {
     console.log(buttonState);
       if(buttonState){
         //init();
-        findAllURL("https://www.reddit.com/");
         var checkbox1 = document.querySelector("input[name=checkbox1]");
         checkbox1.checked = true;
       }
