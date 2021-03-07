@@ -14,3 +14,14 @@ init = function main() {
   findAllURL("https://www.facebook.com/");
   findAllURL("https://www.youtube.com/");
 }
+
+chrome.storage.sync.get(['value'], function (result) {
+  buttonState = result['value'];
+  console.log("Results Retrieved");
+  console.log(buttonState);
+    if(buttonState){
+      init();
+    }
+  
+});
+

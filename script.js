@@ -1,39 +1,16 @@
 let buttonState;
 
-//Set initial state of sliders
-function setSliders(state) {
-    if (state) {
-        document.querySelector("input[name=checkbox1]") = true;
-        init();
-    } else {
-        document.querySelector("input[name=checkbox1]") = false;
-    }
-}
-
 //switch on/off
 document.addEventListener('DOMContentLoaded', function () {
-
-    //fetch settings
-    chrome.storage.sync.get(['value'], function (result) {
-        buttonState = result['value'];
-        console.log("Results Retrieved");
-        console.log(buttonState);
-    });
-
-    console.log(buttonState);
-
-    setSliders(buttonState);
 
     //checkbox state
     var checkbox1 = document.querySelector("input[name=checkbox1]");
     
     checkbox1.addEventListener('click', function () {
-        if (this.checked) {
-            init();
+        if (checkbox1.checked) {
             saveChanges();
         } else {
             saveChanges();
-            init();
         }
     });
     
@@ -66,6 +43,5 @@ function saveChanges() {
         console.log("Results saved");
     });
 }
-
 
 
