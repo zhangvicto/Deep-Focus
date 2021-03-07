@@ -36,14 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             init();
         }
     });
-
-<<<<<<< Updated upstream
-    checkbox1.addEventListener('change', function() {
-      if (this.checked) {
-      } else {
-      }
-      
-=======
+    
     //Search through categories list
     document.getElementById("myInput").addEventListener("input", function () {
         // Declare variables
@@ -63,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 li[i].style.display = "none";
             }
         }
->>>>>>> Stashed changes
     });
 });
 
